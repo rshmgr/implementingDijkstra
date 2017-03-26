@@ -99,12 +99,13 @@ public class Graph {
 
 
     public void printResult(){
-        String output = "Number of nodes = " + this.numOfNodes;
-        output += "\nNumber of edges = " + this.numOfEdges;
+        String output= "";
+        System.out.println("Number of nodes = " + this.numOfNodes);
+        System.out.println("\nNumber of edges = " + this.numOfEdges);
 
 
         for(int i = 0; i < this.nodes.length; i++){
-            output += ("\nThe shortest distance from node 0 to node " + i + " is " + nodes[i].getDistanceFromSource());
+           output = ("\nThe shortest distance from node 0 to node " + i + " is " + nodes[i].getDistanceFromSource());
         }
         System.out.println(output);
     }
